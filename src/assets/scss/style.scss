@@ -1,0 +1,75 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $primary;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4rem;
+	color: $text-main;
+	line-height: 1.6;
+	display: grid;
+	font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		'header header header'
+		'body body body'
+		'footer footer footer';
+}
+
+.header-area {
+	grid-area: header;
+	background-color: $header;
+	box-shadow: 0 3px 0px rgba(#2a2a2a, 0.4);
+	z-index: 5;
+}
+
+.body-area {
+	grid-area: body;
+	box-shadow: 0 3px 0px rgba(#2a2a2a, 0.4);
+	z-index: 10;
+}
+
+.footer-area {
+	grid-area: footer;
+	background-color: $header;
+}
+
+.main {
+	padding: 2rem 0;
+}
+
+.container {
+	max-width: 1690px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 3rem;
+
+	@include breakpoint($screen-375) {
+		padding: 0 1.5rem;
+	}
+}
+
+@import 'blocks/header';
+@import 'blocks/page-index/pool-item';
+@import 'blocks/page-index/sort-algo';
+@import 'blocks/footer';
