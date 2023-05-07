@@ -185,6 +185,12 @@
 		text-transform: uppercase;
 		transition: all 0.2s linear;
 
+		&:hover {
+			background-color: $orange;
+			border: 1px solid lighten($orange, 10%);
+			color: $white;
+		}
+
 		@include breakpoint($screen-1280) {
 			padding: 0.8rem 1.2rem;
 		}
@@ -193,12 +199,6 @@
 			padding: 0.8rem 1rem;
 			font-size: 1.2rem;
 			order: 3;
-		}
-
-		&:hover {
-			background-color: $orange;
-			border: 1px solid lighten($orange, 10%);
-			color: $white;
 		}
 	}
 
@@ -223,6 +223,7 @@
 		font-size: 1.6rem;
 		color: $text-gray;
 		padding: 0.7rem;
+		text-transform: uppercase;
 		transition: all 0.2s linear;
 
 		@include breakpoint($screen-1280) {
