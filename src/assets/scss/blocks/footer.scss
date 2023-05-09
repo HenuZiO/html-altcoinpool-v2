@@ -53,7 +53,7 @@
 
 	&__menu-link {
 		line-height: 1.4rem;
-		color: #767676;
+		color: $text-input;
 		text-decoration: none;
 		position: relative;
 		transition-duration: 0.4s;
@@ -65,15 +65,15 @@
 		}
 
 		&:active {
-			color: #fff;
-			border-bottom: 1px solid #ccc;
+			color: $text-main;
+			border-bottom: 1px solid $text-input;
 		}
 	}
 
 	&__copyright {
 		font-size: 1.4rem;
 		line-height: 1.4rem;
-		color: #767676;
+		color: $text-input;
 		display: flex;
 		flex-direction: column;
 		text-align: center;

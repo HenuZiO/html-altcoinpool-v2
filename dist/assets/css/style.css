@@ -455,7 +455,7 @@ html {
 }
 
 body {
-    background-color: #202020;
+    background: #202020;
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
     color: #d1d1d1;
@@ -480,13 +480,13 @@ body {
     grid-area: header;
     background-color: #0d0d0d;
     box-shadow: 0 3px 0px rgba(42, 42, 42, 0.4);
-    z-index: 5;
+    z-index: 10;
 }
 
 .body-area {
     grid-area: body;
     box-shadow: 0 3px 0px rgba(42, 42, 42, 0.4);
-    z-index: 10;
+    z-index: 5;
 }
 
 .footer-area {
@@ -682,8 +682,10 @@ body {
     display: none;
 }
 
-.header__search-select:hover {
-    border: 1px solid #333;
+.header__search-select:hover, .header__search-select:active {
+    background-color: #e95420;
+    border: 1px solid #ee784e;
+    color: #fff;
 }
 
 .header__search-select:focus {
@@ -761,6 +763,43 @@ body {
     }
 }
 
+.header__menu {
+    position: relative;
+}
+
+.header__menu-popup {
+    width: 20rem;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    right: 1.5rem;
+    background: #0d0d0d;
+    box-shadow: 0 3px 0 rgba(85, 85, 85, 0.5);
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 1.5rem 0;
+}
+
+.header__menu-popup-list {
+    overflow: hidden;
+}
+
+.header__menu-popup-item {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+
+.header__menu-popup-item:hover:not(.sort-by__popup-item--active) {
+    background-color: #1a1a1a;
+}
+
+.header__menu-popup-item--active {
+    color: #fff;
+    background-color: #e95420;
+}
+
 @media (max-width: 375px) {
     .header__menu {
         order: 2;
@@ -771,10 +810,26 @@ body {
 
 .header__menu-list {
     display: flex;
+    align-items: center;
 }
 
 .header__menu-item {
     padding: 1rem;
+}
+
+.header__menu-item--settings {
+    background: transparent;
+    border: none;
+}
+
+.header__menu-item--settings svg {
+    margin-top: 0.5rem;
+    fill: #999;
+    transition: all 0.2s linear;
+}
+
+.header__menu-item--settings svg:hover {
+    fill: #d1d1d1;
 }
 
 .header__menu-link {
@@ -820,8 +875,9 @@ body {
     background-color: #141414;
     max-width: 400px;
     border-radius: 5px;
-    box-shadow: 0 3px 0 rgba(85, 85, 85, 0.5);
-    transition: background-color 0.2s linear;
+    outline: 1px solid #141414;
+    box-shadow: 0 3px 0 rgba(233, 84, 32, 0.7);
+    transition: all 0.2s linear;
     margin-top: 2rem;
 }
 
@@ -892,10 +948,10 @@ body {
 
 .sort {
     display: grid;
-    grid-template-columns: auto minmax(300px, 1fr) auto;
+    grid-template-columns: 1fr auto;
     -moz-column-gap: 1rem;
     column-gap: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     border-bottom: 1px solid #333;
 }
 
@@ -928,26 +984,6 @@ body {
     background-color: #e95420;
     color: #fff;
     border: 1px solid #eb6637;
-}
-
-.sort-name {
-    width: 100%;
-}
-
-.sort-name__input {
-    width: 100%;
-    background-color: #0d0d0d;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    border: 1px solid #222;
-    transition: background-color 0.2s linear;
-}
-
-.sort-name__input:focus {
-    background-color: #1a1a1a;
-    color: #999;
-    border: 1px solid #333;
 }
 
 .sort-by {
@@ -1024,6 +1060,29 @@ body {
     background-color: #e95420;
 }
 
+.search-name {
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.search-name__input {
+    width: 100%;
+    background-color: #0d0d0d;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid #222;
+    transition: background-color 0.2s linear;
+}
+
+.search-name__input:focus {
+    background-color: #151515;
+    color: #999;
+    border: 1px solid #333;
+}
+
 .footer {
     padding: 2rem 0;
 }
@@ -1086,7 +1145,7 @@ body {
 
 .footer__menu-link {
     line-height: 1.4rem;
-    color: #767676;
+    color: #666;
     text-decoration: none;
     position: relative;
     transition-duration: 0.4s;
@@ -1099,14 +1158,14 @@ body {
 }
 
 .footer__menu-link:active {
-    color: #fff;
-    border-bottom: 1px solid #ccc;
+    color: #d1d1d1;
+    border-bottom: 1px solid #666;
 }
 
 .footer__copyright {
     font-size: 1.4rem;
     line-height: 1.4rem;
-    color: #767676;
+    color: #666;
     display: flex;
     flex-direction: column;
     text-align: center;
