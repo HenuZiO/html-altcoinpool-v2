@@ -277,7 +277,9 @@
 		color: $text-gray;
 		padding: 0.7rem;
 		text-transform: uppercase;
-		transition: all 0.2s linear;
+		text-decoration: none;
+		transition-duration: 0.4s;
+		padding-bottom: 0.5rem;
 
 		@include breakpoint($screen-1280) {
 			font-size: 1.4rem;

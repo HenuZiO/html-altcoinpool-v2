@@ -1,5 +1,5 @@
 .footer {
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
 
 	&__inner {
 		background-color: $header;
@@ -67,17 +67,18 @@
 		&:active {
 			color: $text-main;
 			border-bottom: 1px solid $text-input;
+			text-decoration: none;
 		}
 	}
 
 	&__copyright {
-		font-size: 1.4rem;
-		line-height: 1.4rem;
+		padding: 2rem 0;
+		background-color: $primary;
+		line-height: 1.6rem;
 		color: $text-input;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		margin-top: 3rem;
 	}
 
 	&__copyright-main {
@@ -93,7 +94,7 @@
 		transition-duration: 0.3s;
 
 		&:hover {
-			color: lighten($orange, 20%);
+			color: darken($orange, 10%);
 		}
 	}
 }
