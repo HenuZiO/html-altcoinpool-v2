@@ -874,6 +874,111 @@ body {
     text-decoration: none;
 }
 
+.footer {
+    padding: 2rem 0 0 0;
+}
+
+.footer__inner {
+    background-color: #0d0d0d;
+    padding: 3rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+@media (max-width: 375px) {
+    .footer__inner {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 3rem;
+        padding: 2rem;
+    }
+}
+
+.footer__menu {
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 375px) {
+    .footer__menu {
+        margin: 0;
+    }
+}
+
+.footer__menu-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #181818;
+}
+
+@media (max-width: 375px) {
+    .footer__menu-title {
+        text-align: center;
+    }
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__menu-item {
+    margin: 1rem 2rem 1rem 0;
+    justify-items: center;
+}
+
+.footer__menu-link {
+    line-height: 1.4rem;
+    color: #666;
+    text-decoration: none;
+    position: relative;
+    transition-duration: 0.4s;
+    padding-bottom: 0.5rem;
+}
+
+.footer__menu-link:hover {
+    color: #e95420;
+    border-bottom: 1px solid #e95420;
+}
+
+.footer__menu-link:active {
+    color: #d1d1d1;
+    border-bottom: 1px solid #666;
+    text-decoration: none;
+}
+
+.footer__copyright {
+    padding: 2rem 0;
+    background-color: #202020;
+    line-height: 1.6rem;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__copyright-main {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.footer__contact-link, .footer__copyright-link {
+    text-decoration: none;
+    color: #e95420;
+    transition-duration: 0.3s;
+}
+
+.footer__contact-link:hover, .footer__copyright-link:hover {
+    color: #c34113;
+}
+
 .pool-item {
     background-color: #141414;
     max-width: 400px;
@@ -1103,111 +1208,6 @@ body {
     border: 1px solid #333;
 }
 
-.footer {
-    padding: 2rem 0 0 0;
-}
-
-.footer__inner {
-    background-color: #0d0d0d;
-    padding: 3rem;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-@media (max-width: 375px) {
-    .footer__inner {
-        grid-template-columns: none;
-        grid-template-rows: repeat(4, auto);
-        grid-row-gap: 3rem;
-        padding: 2rem;
-    }
-}
-
-.footer__menu {
-    margin-right: 5rem;
-    margin-bottom: 1rem;
-}
-
-@media (max-width: 375px) {
-    .footer__menu {
-        margin: 0;
-    }
-}
-
-.footer__menu-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.9rem;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #181818;
-}
-
-@media (max-width: 375px) {
-    .footer__menu-title {
-        text-align: center;
-    }
-}
-
-.footer__menu-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer__menu-item {
-    margin: 1rem 2rem 1rem 0;
-    justify-items: center;
-}
-
-.footer__menu-link {
-    line-height: 1.4rem;
-    color: #666;
-    text-decoration: none;
-    position: relative;
-    transition-duration: 0.4s;
-    padding-bottom: 0.5rem;
-}
-
-.footer__menu-link:hover {
-    color: #e95420;
-    border-bottom: 1px solid #e95420;
-}
-
-.footer__menu-link:active {
-    color: #d1d1d1;
-    border-bottom: 1px solid #666;
-    text-decoration: none;
-}
-
-.footer__copyright {
-    padding: 2rem 0;
-    background-color: #202020;
-    line-height: 1.6rem;
-    color: #666;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer__copyright-main {
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
-.footer__contact-link, .footer__copyright-link {
-    text-decoration: none;
-    color: #e95420;
-    transition-duration: 0.3s;
-}
-
-.footer__contact-link:hover, .footer__copyright-link:hover {
-    color: #c34113;
-}
-
 /* свойства модального окна по умолчанию */
 .modal {
     display: flex;
@@ -1226,6 +1226,8 @@ body {
  /* по умолчанию модальное окно прозрачно */
     transition: opacity 200ms ease-in;
  /* анимация перехода */
+    pointer-events: none;
+ /* элемент невидим для событий мыши */
     margin: 0;
     padding: 0;
 }

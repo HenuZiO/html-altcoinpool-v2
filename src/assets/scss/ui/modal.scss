@@ -14,7 +14,7 @@
 	-webkit-transition: opacity 200ms ease-in;
 	-moz-transition: opacity 200ms ease-in;
 	transition: opacity 200ms ease-in; /* анимация перехода */
-
+	pointer-events: none; /* элемент невидим для событий мыши */
 	margin: 0;
 	padding: 0;
 }
