@@ -69,8 +69,8 @@ body {
 	}
 }
 
-@import 'blocks/header';
-@import 'blocks/page-index/pool-item';
-@import 'blocks/page-index/sort-algo';
-@import 'blocks/footer';
-@import 'blocks/ui/modal';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'pages/page-index/pool-item';
+@import 'pages/page-index/sort-algo';
+@import 'ui/modal';
