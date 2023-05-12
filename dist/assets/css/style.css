@@ -513,35 +513,19 @@ body {
 }
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto minmax(400px, 1fr) auto;
+    grid-template-areas: "logo search menu";
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
     padding: 2rem 0;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-items: center;
     align-items: center;
-}
-
-@media (max-width: 1280px) {
-    .header {
-        padding: 1.5rem 0;
-    }
-}
-
-@media (max-width: 880px) {
-    .header {
-        flex-direction: column;
-    }
 }
 
 .header__logo {
     display: flex;
-}
-
-@media (max-width: 375px) {
-    .header__logo {
-        order: 1;
-        border-bottom: 1px solid rgba(102, 102, 102, 0.3);
-        padding-bottom: 2rem;
-    }
+    grid-area: logo;
 }
 
 .header__logo-link {
@@ -552,35 +536,11 @@ body {
     max-width: 30px;
 }
 
-@media (max-width: 1280px) {
-    .header__logo-img {
-        max-width: 25px;
-    }
-}
-
-@media (max-width: 1140px) {
-    .header__logo-img {
-        max-width: 20px;
-    }
-}
-
 .header__logo-text {
     display: flex;
     flex-direction: column;
     padding-left: 1.5rem;
     padding-top: 0.2rem;
-}
-
-@media (max-width: 1280px) {
-    .header__logo-text {
-        padding-top: 0.3rem;
-    }
-}
-
-@media (max-width: 1140px) {
-    .header__logo-text {
-        padding-top: 0.1rem;
-    }
 }
 
 .header__logo-title {
@@ -590,71 +550,15 @@ body {
     color: #d1d1d1;
 }
 
-@media (max-width: 1280px) {
-    .header__logo-title {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 1140px) {
-    .header__logo-title {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 1050px) {
-    .header__logo-title {
-        display: none;
-    }
-}
-
-@media (max-width: 880px) {
-    .header__logo-title {
-        display: flex;
-    }
-}
-
 .header__logo-desc {
     font-size: 1.6rem;
     font-weight: 200;
     color: #ccc;
 }
 
-@media (max-width: 1280px) {
-    .header__logo-desc {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 1140px) {
-    .header__logo-desc {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 1050px) {
-    .header__logo-desc {
-        display: none;
-    }
-}
-
-@media (max-width: 880px) {
-    .header__logo-desc {
-        display: flex;
-    }
-}
-
 .header__search {
     font-size: 1.2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media (max-width: 375px) {
-    .header__search {
-        order: 3;
-    }
+    grid-area: search;
 }
 
 .header__search-select {
@@ -663,20 +567,6 @@ body {
     background-color: #1a1a1a;
     border: 1px solid #222;
     color: #666;
-}
-
-@media (max-width: 1280px) {
-    .header__search-select {
-        padding: 0.8rem 0.5rem 0.8rem 1rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .header__search-select {
-        padding: 0.8rem 0 0.8rem 1rem;
-        font-size: 1.2rem;
-        order: 2;
-    }
 }
 
 .header__search-select::-ms-expand {
@@ -711,22 +601,6 @@ body {
     border-radius: 7px;
 }
 
-@media (max-width: 1280px) {
-    .header__search-input {
-        padding: 0.8rem 1.2rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .header__search-input {
-        padding: 1rem 0.5rem 1rem 1.5rem;
-        font-size: 1.2rem;
-        order: 1;
-        margin-bottom: 1.5rem;
-        margin-left: 0;
-    }
-}
-
 .header__search-input:focus {
     background-color: #222222;
     color: #999;
@@ -750,22 +624,9 @@ body {
     color: #fff;
 }
 
-@media (max-width: 1280px) {
-    .header__search-button {
-        padding: 0.8rem 1.2rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .header__search-button {
-        padding: 0.8rem 1rem;
-        font-size: 1.2rem;
-        order: 3;
-    }
-}
-
 .header__menu {
     position: relative;
+    grid-area: menu;
 }
 
 .header__menu-popup {
@@ -811,14 +672,6 @@ body {
     background-color: #e95420;
 }
 
-@media (max-width: 375px) {
-    .header__menu {
-        order: 2;
-        border-bottom: 1px solid rgba(102, 102, 102, 0.3);
-        padding-bottom: 2rem;
-    }
-}
-
 .header__menu-list {
     display: flex;
     align-items: center;
@@ -852,12 +705,6 @@ body {
     text-decoration: none;
     transition-duration: 0.4s;
     padding-bottom: 0.5rem;
-}
-
-@media (max-width: 1280px) {
-    .header__menu-link {
-        font-size: 1.4rem;
-    }
 }
 
 .header__menu-link:hover {
