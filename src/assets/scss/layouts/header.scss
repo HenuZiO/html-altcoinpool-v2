@@ -45,33 +45,21 @@
 		grid-area: search;
 	}
 
-	&__search-select {
-		padding: 1rem 0.7rem 1rem 1.5rem;
-		border-radius: 7px;
+	&__search-choice {
 		background-color: $input;
 		border: 1px solid $border-input;
 		color: $text-input;
-	}
+		padding: 1rem 1.5rem;
+		border-radius: 7px;
+		margin-left: 1rem;
+		text-transform: uppercase;
+		transition: all 0.2s linear;
 
-	&__search-select::-ms-expand {
-		display: none;
-	}
-
-	&__search-select:hover,
-	&__search-select:active {
-		background-color: $orange;
-		border: 1px solid lighten($orange, 10%);
-		color: $white;
-	}
-
-	&__search-select:focus {
-		border: 1px solid $border-input-hover;
-		background-color: lighten($input, 3%);
-		color: $text-gray;
-	}
-
-	&__search-select option {
-		font-weight: normal;
+		&:hover {
+			background-color: $orange;
+			border: 1px solid lighten($orange, 10%);
+			color: $white;
+		}
 	}
 
 	&__search-input {
