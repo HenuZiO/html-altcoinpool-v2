@@ -1128,6 +1128,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
+    gap: 5rem;
     border-bottom: 3px dashed #333;
     border-width: 2px;
 }
@@ -1138,6 +1139,7 @@ body {
     margin-bottom: 0;
     line-height: 1.5;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 /* свойства для кнопки "Закрыть" */
@@ -1152,7 +1154,7 @@ body {
 /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
 .close:focus,
 .close:hover {
-    color: #d1d1d1;
+    color: #cc4414;
     text-decoration: none;
     cursor: pointer;
     opacity: 0.75;

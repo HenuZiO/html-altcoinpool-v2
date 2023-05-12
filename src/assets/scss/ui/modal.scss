@@ -78,6 +78,7 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 1.5rem;
+	gap: 5rem;
 	border-bottom: 3px dashed $border-input-hover;
 	border-width: 2px;
 }
@@ -87,6 +88,7 @@
 	margin-bottom: 0;
 	line-height: 1.5;
 	font-weight: 500;
+	text-transform: uppercase;
 }
 /* свойства для кнопки "Закрыть" */
 .close {
@@ -99,7 +101,7 @@
 /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
 .close:focus,
 .close:hover {
-	color: $text-main;
+	color: darken($orange, 8%);
 	text-decoration: none;
 	cursor: pointer;
 	opacity: 0.75;
