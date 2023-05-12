@@ -769,7 +769,7 @@ body {
 }
 
 .header__menu-popup {
-    width: 20rem;
+    width: 25rem;
     position: absolute;
     right: 0;
     top: 6rem;
@@ -785,10 +785,20 @@ body {
     overflow: hidden;
 }
 
+.header__menu-popup-title {
+    text-align: center;
+    color: #e95420;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+}
+
 .header__menu-popup-item {
     display: flex;
-    justify-content: center;
-    padding: 0.8rem 1rem;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
     cursor: pointer;
 }
 

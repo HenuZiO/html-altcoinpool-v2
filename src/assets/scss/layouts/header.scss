@@ -209,7 +209,7 @@
 		position: relative;
 
 		&-popup {
-			width: 20rem;
+			width: 25rem;
 			position: absolute;
 			right: 0;
 			top: 6rem;
@@ -225,10 +225,20 @@
 			overflow: hidden;
 		}
 
+		&-popup-title {
+			text-align: center;
+			color: $orange;
+			font-size: 1.6rem;
+			font-weight: 500;
+			margin-bottom: 1rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid $separator-light;
+		}
+
 		&-popup-item {
 			display: flex;
-			justify-content: center;
-			padding: 0.8rem 1rem;
+			justify-content: space-between;
+			padding: 1rem 1.5rem;
 			cursor: pointer;
 
 			&:hover:not(.sort-by__popup-item--active) {
