@@ -1,0 +1,63 @@
+&__menu {
+	position: relative;
+	grid-area: menu;
+}
+
+&__menu-list {
+	display: flex;
+	align-items: center;
+}
+
+&__menu-item {
+	padding: 1rem 0 1rem 2rem;
+
+	&--settings {
+		background: transparent;
+		border: none;
+
+		svg {
+			margin-top: 0.5rem;
+			fill: #999;
+			transition: all 0.2s linear;
+
+			&:hover {
+				fill: $text-main;
+			}
+		}
+	}
+}
+
+&__menu-link {
+	font-weight: 300;
+	font-size: 1.6rem;
+	color: $text-gray;
+	padding: 0.7rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	padding-bottom: 0.5rem;
+
+	&:hover {
+		color: $orange;
+		border-bottom: 1px solid $orange;
+	}
+
+	&:active {
+		color: $text-main;
+		border-bottom: 1px solid rgba($text-gray, 0.5);
+	}
+
+	&--btn {
+		background-color: $input;
+		border: 1px solid $border-input;
+		color: $text-input;
+		border-radius: 7px;
+
+		&:hover {
+			background-color: $orange;
+			border: 1px solid lighten($orange, 10%);
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}

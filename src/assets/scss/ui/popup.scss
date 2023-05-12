@@ -1,0 +1,53 @@
+.popup {
+	width: 25rem;
+	position: absolute;
+	right: 0;
+	top: 5rem;
+	background: $header;
+	box-shadow: 0 3px 0 rgba(#555, 0.5);
+	border: 1px solid $border-input;
+	border-radius: 5px;
+	padding: 1.5rem 0;
+
+	&__list {
+		overflow: hidden;
+	}
+
+	&__title {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		color: $orange;
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid $separator-light;
+
+		&::after {
+			content: '▲';
+			position: absolute;
+			right: 1.5rem;
+		}
+	}
+
+	&__list-item {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 1.5rem;
+		cursor: pointer;
+
+		&:hover:not(.popup__list-item--active) {
+			background-color: lighten($header, 3%);
+		}
+
+		&--active {
+			color: $white;
+			background-color: $orange;
+		}
+	}
+
+	&__list-item--center {
+		justify-content: center;
+	}
+}

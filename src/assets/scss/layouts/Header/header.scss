@@ -1,0 +1,13 @@
+.header {
+	display: grid;
+	grid-template-columns: auto minmax(400px, 1fr) auto;
+	grid-template-areas: 'logo search menu';
+	column-gap: 2rem;
+	padding: 2rem 0;
+	justify-items: center;
+	align-items: center;
+
+	@import '_logo';
+	@import '_search';
+	@import '_menu';
+}

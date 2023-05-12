@@ -43,71 +43,27 @@
 	display: flex;
 	gap: 2rem;
 
-	&__popup {
-		width: 20rem;
-		position: absolute;
-		right: 0;
-		top: 5rem;
-		background: $header;
-		box-shadow: 0 3px 0 rgba(#555, 0.5);
-		border: 1px solid $border-input;
-		border-radius: 5px;
-		overflow: hidden;
-		padding: 1.5rem 0;
-
-		&--btn {
-			font-family: inherit;
-			color: inherit;
-			background-color: $header;
-			padding: 0.6rem 1.5rem;
-			border-radius: 4px;
-			cursor: pointer;
-			transition: background-color 0.2s linear;
-			border: 1px solid $block;
-
-			&:active {
-				background-color: darken($orange, 7%);
-				color: $white;
-				border: 1px solid lighten($orange, 5%);
-			}
-
-			&:hover {
-				background-color: $orange;
-				color: $white;
-				border: 1px solid lighten($orange, 5%);
-
-				span {
-					color: $separator;
-				}
-			}
-
-			span {
-				color: $orange;
-
-				&:active {
-					color: $separator;
-				}
-			}
-		}
-	}
-
-	&__popup-list {
-		overflow: hidden;
-	}
-
-	&__popup-item {
-		display: flex;
-		justify-content: center;
-		padding: 0.8rem 1rem;
+	&__popup-btn {
+		font-family: inherit;
+		color: inherit;
+		background-color: $header;
+		padding: 0.6rem 1.5rem;
+		border-radius: 4px;
 		cursor: pointer;
+		transition: background-color 0.2s linear;
+		border: 1px solid $block;
 
-		&:hover:not(.sort-by__popup-item--active) {
-			background-color: lighten($header, 7%);
+		&:active {
+			background-color: darken($orange, 7%);
+			color: $white;
+			border: 1px solid lighten($orange, 5%);
 		}
-	}
-	&__popup-item--active {
-		color: $white;
-		background-color: $orange;
+
+		&:hover {
+			background-color: $orange;
+			color: $white;
+			border: 1px solid lighten($orange, 5%);
+		}
 	}
 }
 

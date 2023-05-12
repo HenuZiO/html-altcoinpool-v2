@@ -1,0 +1,32 @@
+&__logo {
+	display: flex;
+	grid-area: logo;
+}
+
+&__logo-link {
+	display: block;
+}
+
+&__logo-img {
+	max-width: 30px;
+}
+
+&__logo-text {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1.5rem;
+	padding-top: 0.2rem;
+}
+
+&__logo-title {
+	font-size: 3rem;
+	text-transform: uppercase;
+	line-height: 1.2;
+	color: $text-main;
+}
+
+&__logo-desc {
+	font-size: 1.6rem;
+	font-weight: 200;
+	color: #ccc;
+}
