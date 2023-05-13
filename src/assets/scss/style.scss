@@ -70,8 +70,8 @@ body {
 }
 
 @import 'layouts/Header/header';
-@import 'layouts/footer';
+@import 'layouts/Footer/footer';
 @import 'pages/page-index/pool-item';
-@import 'pages/page-index/sort-algo';
+@import 'pages/page-index/sorting/sort';
 @import 'ui/modal';
 @import 'ui/popup';

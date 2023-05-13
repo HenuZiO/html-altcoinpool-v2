@@ -1,0 +1,52 @@
+&__menu {
+	margin-right: 5rem;
+	margin-bottom: 1rem;
+
+	@include breakpoint($screen-375) {
+		margin: 0;
+	}
+}
+
+&__menu-title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.9rem;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #181818;
+
+	@include breakpoint($screen-375) {
+		text-align: center;
+	}
+}
+
+&__menu-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+&__menu-item {
+	margin: 1rem 2rem 1rem 0;
+	justify-items: center;
+}
+
+&__menu-link {
+	line-height: 1.4rem;
+	color: $text-input;
+	text-decoration: none;
+	position: relative;
+	transition-duration: 0.4s;
+	padding-bottom: 0.5rem;
+
+	&:hover {
+		color: $orange;
+		border-bottom: 1px solid $orange;
+	}
+
+	&:active {
+		color: $text-main;
+		border-bottom: 1px solid $text-input;
+		text-decoration: none;
+	}
+}
