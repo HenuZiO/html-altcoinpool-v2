@@ -21,7 +21,7 @@
 			transition: all 0.2s linear;
 
 			&:hover {
-				fill: $text-main;
+				fill: $gray-1;
 			}
 		}
 	}
@@ -30,7 +30,7 @@
 &__menu-link {
 	font-weight: 300;
 	font-size: 1.6rem;
-	color: $text-gray;
+	color: $gray-3;
 	padding: 0.7rem;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -43,14 +43,14 @@
 	}
 
 	&:active {
-		color: $text-main;
-		border-bottom: 1px solid rgba($text-gray, 0.5);
+		color: $gray-1;
+		border-bottom: 1px solid rgba($gray-3, 0.5);
 	}
 
 	&--btn {
-		background-color: $input;
-		border: 1px solid $border-input;
-		color: $text-input;
+		background-color: $black-1;
+		border: 1px solid $gray-7;
+		color: $gray-4;
 		border-radius: 7px;
 
 		&:hover {

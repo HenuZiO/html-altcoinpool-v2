@@ -50,7 +50,7 @@
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	background-color: $primary;
+	background-color: $gray-8;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	border: 1px solid rgba(0, 0, 0, 0.2);
@@ -79,7 +79,7 @@
 	justify-content: space-between;
 	padding: 1.5rem;
 	gap: 5rem;
-	border-bottom: 3px dashed $border-input-hover;
+	border-bottom: 3px dashed $gray-5;
 	border-width: 2px;
 }
 .modal-title {

@@ -3,9 +3,9 @@
 	position: absolute;
 	right: 0;
 	top: 5rem;
-	background: $header;
+	background: $black;
 	box-shadow: 0 3px 0 rgba(#555, 0.5);
-	border: 1px solid $border-input;
+	border: 1px solid $gray-7;
 	border-radius: 5px;
 	padding: 1.5rem 0;
 
@@ -22,7 +22,7 @@
 		font-weight: 500;
 		margin-bottom: 1rem;
 		padding-bottom: 1rem;
-		border-bottom: 1px solid $separator-light;
+		border-bottom: 1px solid $gray-5;
 
 		&::after {
 			content: '▲';
@@ -38,7 +38,7 @@
 		cursor: pointer;
 
 		&:hover:not(.popup__list-item--active) {
-			background-color: lighten($header, 3%);
+			background-color: lighten($black, 3%);
 		}
 
 		&--active {
