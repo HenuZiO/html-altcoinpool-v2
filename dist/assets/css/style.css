@@ -963,7 +963,7 @@ body {
 
 .sort-name__input:focus {
     background-color: #212121;
-    color: #999;
+    color: #666;
     border: 1px solid #333;
 }
 

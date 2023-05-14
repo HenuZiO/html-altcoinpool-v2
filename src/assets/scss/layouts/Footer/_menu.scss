@@ -33,7 +33,7 @@
 
 &__menu-link {
 	line-height: 1.4rem;
-	color: $text-input;
+	color: $gray-4;
 	text-decoration: none;
 	position: relative;
 	transition-duration: 0.4s;
@@ -45,8 +45,8 @@
 	}
 
 	&:active {
-		color: $text-main;
-		border-bottom: 1px solid $text-input;
+		color: $gray-1;
+		border-bottom: 1px solid $gray-4;
 		text-decoration: none;
 	}
 }
