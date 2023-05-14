@@ -1,0 +1,31 @@
+.sort-algo {
+	display: flex;
+	gap: 2rem;
+
+	&__list {
+		display: flex;
+		gap: 1rem;
+	}
+
+	&__item {
+		background-color: $header;
+		padding: 0.6rem 1.5rem;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 0.2s linear;
+		border: 1px solid $block;
+
+		&--active,
+		&:active {
+			background-color: darken($orange, 8%);
+			color: $white;
+			border: 1px solid lighten($orange, 5%);
+		}
+
+		&:hover {
+			background-color: $orange;
+			color: $white;
+			border: 1px solid lighten($orange, 5%);
+		}
+	}
+}

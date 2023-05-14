@@ -1,0 +1,26 @@
+&__copyright {
+	padding: 2rem 0;
+	background-color: $primary;
+	line-height: 1.6rem;
+	color: $text-input;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+&__copyright-main {
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+&__contact-link,
+&__copyright-link {
+	text-decoration: none;
+	color: $orange;
+
+	transition-duration: 0.3s;
+
+	&:hover {
+		color: darken($orange, 10%);
+	}
+}
