@@ -2,12 +2,19 @@
 	display: grid;
 	grid-template-columns: auto minmax(400px, 1fr) auto;
 	grid-template-areas: 'logo search menu';
-	column-gap: 2rem;
+	column-gap: 3rem;
 	padding: 2rem 0;
-	justify-items: center;
 	align-items: center;
 
 	@import '_logo';
 	@import '_search';
 	@import '_menu';
+
+	@include breakpoint($screen-1200) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'logo menu menu'
+			'search search search';
+		row-gap: 3rem;
+	}
 }

@@ -2,10 +2,9 @@
 	background-color: $black;
 	max-width: 400px;
 	border-radius: 5px;
-	outline: 1px solid $black;
+	outline: 1px solid $gray-7;
 	box-shadow: 0 3px 0 rgba($orange, 0.7);
 	transition: all 0.2s linear;
-	margin-top: 1.5rem;
 
 	&__container {
 		width: 100%;

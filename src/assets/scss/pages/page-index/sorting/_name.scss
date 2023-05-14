@@ -1,10 +1,8 @@
 .sort-name {
 	width: 100%;
-	margin-top: 1.5rem;
-	border-bottom: 1px solid #333;
-	padding-bottom: 1.5rem;
 
 	&__input {
+		min-width: 150px;
 		width: 100%;
 		background-color: $black;
 		padding: 1rem 1.5rem;
@@ -15,7 +13,7 @@
 		transition: background-color 0.2s linear;
 
 		&:focus {
-			background-color: lighten($black, 5%);
+			background-color: lighten($black, 2%);
 			color: $gray-4;
 			border: 1px solid $gray-5;
 		}

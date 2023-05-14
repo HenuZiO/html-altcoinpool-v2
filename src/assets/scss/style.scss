@@ -71,6 +71,13 @@ body {
 	}
 }
 
+.border {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding: 1.5rem 0;
+	margin: 1.5rem 0;
+}
+
 @import 'layouts/Header/header';
 @import 'layouts/Footer/footer';
 @import 'pages/page-index/pool-item';
