@@ -4,9 +4,10 @@
 	&__list {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 		gap: 1rem;
 		text-align: center;
+		margin-left: 1rem;
 	}
 
 	&__item {

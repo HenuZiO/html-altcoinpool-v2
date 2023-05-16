@@ -19,13 +19,17 @@
 
 		svg {
 			margin-top: 0.5rem;
-			fill: #999;
+			fill: $gray-3;
 			transition: all 0.2s linear;
 
 			&:hover {
 				fill: $gray-1;
 			}
 		}
+	}
+
+	@include breakpoint($screen-375) {
+		display: none;
 	}
 }
 
