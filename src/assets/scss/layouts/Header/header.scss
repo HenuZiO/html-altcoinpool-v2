@@ -18,4 +18,8 @@
 			'search search search';
 		row-gap: 3rem;
 	}
+
+	@include breakpoint($screen-375) {
+		grid-template-areas: 'logo menu';
+	}
 }

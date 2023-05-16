@@ -24,11 +24,13 @@
 &__menu-list {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
 }
 
 &__menu-item {
-	margin: 1rem 2rem 1rem 0;
-	justify-items: center;
+	display: flex;
+	margin-top: 1rem;
 }
 
 &__menu-link {

@@ -5,6 +5,10 @@
 	justify-content: center;
 	gap: 1rem;
 	width: 100%;
+
+	@include breakpoint($screen-375) {
+		display: none;
+	}
 }
 
 &__search-choice {
@@ -13,6 +17,9 @@
 	color: $gray-4;
 	padding: 1rem 1.5rem;
 	border-radius: 7px;
+	max-width: 80px;
+	width: 100%;
+	text-align: center;
 
 	text-transform: uppercase;
 	transition: all 0.2s linear;
@@ -21,6 +28,11 @@
 		background-color: $orange;
 		border: 1px solid lighten($orange, 10%);
 		color: $white;
+	}
+
+	@include breakpoint($screen-375) {
+		max-width: 150px;
+		order: 2;
 	}
 }
 
@@ -45,6 +57,10 @@
 		max-width: 1140px;
 		width: 100%;
 	}
+
+	@include breakpoint($screen-375) {
+		order: 1;
+	}
 }
 
 &__search-button {
@@ -53,6 +69,9 @@
 	color: $gray-4;
 	padding: 1rem 1.5rem;
 	border-radius: 7px;
+	max-width: 80px;
+	width: 100%;
+	text-align: center;
 
 	text-transform: uppercase;
 	transition: all 0.2s linear;
@@ -61,5 +80,10 @@
 		background-color: $orange;
 		border: 1px solid lighten($orange, 10%);
 		color: $white;
+	}
+
+	@include breakpoint($screen-375) {
+		max-width: 150px;
+		order: 3;
 	}
 }
