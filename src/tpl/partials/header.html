@@ -1,5 +1,6 @@
 <div class="container">
 	<header class="header">
+		<!-- LOGO -->
 		<div class="header__logo">
 			<a href="/" class="header__logo-link">
 				<img
@@ -13,6 +14,9 @@
 				<h2 class="header__logo-desc">Crypto Mining Pool</h2>
 			</div>
 		</div>
+		<!-- /LOGO -->
+
+		<!-- SEARCH -->
 		<form class="header__search">
 			<button class="header__search-choice">Pool</button>
 			<input
@@ -22,13 +26,15 @@
 			/>
 			<button class="header__search-button" type="submit">Search</button>
 		</form>
-		<div class="header__menu">
-			<ul class="header__menu-list">
-				<li class="header__menu-item header__menu-burger">
-					<button class="menu btn3" data-menu="3">
-						<span class="icon"></s>
-					</button>
+		<!-- /SEARCH -->
 
+		<!-- MENU -->
+		<nav class="header__menu">
+			<ul class="header__menu-list">
+				<li class="header__menu-item header__menu-burger--link">
+					<button class="header__menu-burger--btn">
+						<span class="icon"></span>
+					</button>
 				</li>
 				<li class="header__menu-item">
 					<a class="header__menu-link" href="/">Home</a>
@@ -73,6 +79,10 @@
 					</div> -->
 				</li>
 			</ul>
-		</div>
+		</nav>
+
+		<div class="header__menu-burger">Я бургер меню!</div>
+
+		<!-- /MENU -->
 	</header>
 </div>

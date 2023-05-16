@@ -19,7 +19,7 @@
 		row-gap: 3rem;
 	}
 
-	@include breakpoint($screen-375) {
+	@include breakpoint($screen-690) {
 		grid-template-areas: 'logo menu';
 	}
 }

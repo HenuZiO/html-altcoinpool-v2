@@ -6,7 +6,7 @@
 	gap: 1rem;
 	width: 100%;
 
-	@include breakpoint($screen-375) {
+	@include breakpoint($screen-690) {
 		display: none;
 	}
 }
@@ -30,7 +30,7 @@
 		color: $white;
 	}
 
-	@include breakpoint($screen-375) {
+	@include breakpoint($screen-690) {
 		max-width: 150px;
 		order: 2;
 	}
@@ -58,7 +58,7 @@
 		width: 100%;
 	}
 
-	@include breakpoint($screen-375) {
+	@include breakpoint($screen-690) {
 		order: 1;
 	}
 }
@@ -82,7 +82,7 @@
 		color: $white;
 	}
 
-	@include breakpoint($screen-375) {
+	@include breakpoint($screen-690) {
 		max-width: 150px;
 		order: 3;
 	}

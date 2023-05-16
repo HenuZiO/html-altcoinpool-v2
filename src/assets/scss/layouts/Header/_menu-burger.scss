@@ -5,7 +5,7 @@ $dark: #999;
 	width: 60px;
 	height: 60px;
 	top: $top;
-	left: $left;
+	right: $left;
 	transition-duration: 0.5s;
 }
 
@@ -15,7 +15,7 @@ $dark: #999;
 	height: $height;
 	width: $width;
 	top: 30px;
-	left: -13px;
+	right: 0;
 	background-color: $dark;
 }
 
@@ -40,17 +40,37 @@ $dark: #999;
 }
 
 &__menu-burger {
-	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	background: #ffefba;
+	transform: translateX(-100%);
+	transition: transform 0.5s;
 
-	@include breakpoint($screen-375) {
-		display: flex;
+	&.active {
+		transform: translateX(0);
+		z-index: 5;
+		pointer-events: auto;
+	}
+
+	&--link {
+		display: none;
+
+		@include breakpoint($screen-690) {
+			display: flex;
+		}
 	}
 }
 
-.btn3 {
+&__menu-burger--btn {
 	border: none;
 	background: transparent;
-	@include btn(20px, -30px);
+	z-index: 100;
+
+	@include btn(0, -15px);
 
 	.icon {
 		@include icon(0px, 60px);

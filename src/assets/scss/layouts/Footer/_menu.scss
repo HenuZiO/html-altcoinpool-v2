@@ -14,7 +14,7 @@
 	text-transform: uppercase;
 	padding-bottom: 1rem;
 	margin-bottom: 1rem;
-	border-bottom: 1px solid #181818;
+	border-bottom: 1px solid $gray-7;
 
 	@include breakpoint($screen-375) {
 		text-align: center;
@@ -22,10 +22,10 @@
 }
 
 &__menu-list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2rem;
+	row-gap: 1rem;
 }
 
 &__menu-item {

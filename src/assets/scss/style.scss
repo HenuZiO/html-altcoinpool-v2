@@ -21,6 +21,10 @@ body {
 	line-height: 1.6;
 	display: grid;
 	font-weight: 400;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 
 *,
