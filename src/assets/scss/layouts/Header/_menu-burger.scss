@@ -41,12 +41,12 @@ $dark: #999;
 
 &__menu-burger {
 	position: fixed;
-	top: 0;
+	top: 107px;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 15px;
-	background: #ffefba;
+	padding: 1.5rem;
+	background: $gray-8;
 	transform: translateX(-100%);
 	transition: transform 0.5s;
 
