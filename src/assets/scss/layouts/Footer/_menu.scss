@@ -23,7 +23,7 @@
 
 &__menu-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	column-gap: 2rem;
 	row-gap: 1rem;
 }
@@ -31,6 +31,10 @@
 &__menu-item {
 	display: flex;
 	margin-top: 1rem;
+
+	@include breakpoint($screen-375) {
+		justify-content: center;
+	}
 }
 
 &__menu-link {

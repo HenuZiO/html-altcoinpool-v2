@@ -5,10 +5,6 @@
 	gap: 1rem;
 	width: 100%;
 
-	@include breakpoint($screen-690) {
-		display: none;
-	}
-
 	&--choice {
 		background-color: $black-1;
 		border: 1px solid $gray-7;
