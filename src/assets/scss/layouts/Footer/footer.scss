@@ -4,11 +4,11 @@
 	&__inner {
 		background-color: $black;
 		padding: 3rem;
-		justify-items: center;
+
 		display: grid;
-		grid-template-columns: repeat(4, auto);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-column-gap: 3rem;
+		grid-row-gap: 5rem;
 
 		@include breakpoint($screen-375) {
 			grid-template-columns: none;
