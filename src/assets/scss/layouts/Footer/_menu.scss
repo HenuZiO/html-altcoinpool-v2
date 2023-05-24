@@ -1,9 +1,5 @@
 &__menu {
 	margin-right: 5rem;
-
-	@include breakpoint($screen-375) {
-		margin: 0;
-	}
 }
 
 &__menu-title {
@@ -14,10 +10,6 @@
 	padding-bottom: 1rem;
 	margin-bottom: 1rem;
 	border-bottom: 1px solid $gray-7;
-
-	@include breakpoint($screen-375) {
-		text-align: center;
-	}
 }
 
 &__menu-list {
@@ -28,11 +20,7 @@
 }
 
 &__menu-item {
-	margin-top: 1rem;
-
-	@include breakpoint($screen-375) {
-		justify-content: center;
-	}
+	margin: 1rem 1.5rem 0 1.5rem;
 }
 
 &__menu-link {

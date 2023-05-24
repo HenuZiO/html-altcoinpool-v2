@@ -1,6 +1,10 @@
 .sort-algo {
 	display: flex;
 
+	@include breakpoint($screen-690) {
+		display: none;
+	}
+
 	&__list {
 		width: 100%;
 		display: grid;
@@ -30,5 +34,19 @@
 			color: $white;
 			border: 1px solid lighten($orange, 5%);
 		}
+	}
+}
+
+.sort-algo__mobile {
+	display: none;
+
+	@include breakpoint($screen-690) {
+		display: block;
+		border: none;
+		padding: 1rem;
+		border-radius: 7px;
+		background-color: $orange;
+		text-transform: uppercase;
+		color: $white;
 	}
 }

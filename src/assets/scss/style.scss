@@ -80,6 +80,10 @@ body {
 	border-bottom: 1px solid #333;
 	padding: 1.5rem 0;
 	margin: 1.5rem 0;
+
+	@include breakpoint($screen-690) {
+		border-top: none;
+	}
 }
 
 @import 'layouts/Header/header';
